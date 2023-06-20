@@ -6,22 +6,35 @@ using namespace std;
 class Circel {
 public:
     float radius;
+
+    Circel() {
+        radius = 42;
+    }
+    
+    Circel(float r) {
+    radius = r;
+    }
+
     float surface() {
         return M_PI * radius * radius;
     }
 
 };
 
+
+
 int main() {
 
-    Circel frank;
-    frank.radius = 25;
+
 
     Circel peter;
-    peter.radius = 200;
+    cout << peter.surface() << "\n";
+    peter.radius = 56;
+    cout << peter.surface() << "\n";
 
-    cout << frank.surface();
-    cout << peter.surface();
+    Circel hans(2);
+    cout << hans.surface();
+
 
     return 0;
 }
