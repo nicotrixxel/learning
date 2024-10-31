@@ -1,3 +1,7 @@
 
 .vscode/settings.json
 *.exe
+Rust/Cargo.lock
+*/target
+*/.idea
+*.toml
